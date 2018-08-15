@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.abnv.flamefreezer.crimevigilance.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF517773"
+            android:ems="30"
+            android:hint="Username/Email ID"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="184dp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF517773"
+            android:ems="30"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="229dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:background="@color/colorAccent"
+            android:backgroundTintMode="src_in"
+            android:onClick="onClickLogin"
+            android:text="LOGIN"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="286dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickTextView"
+            android:text="@string/createacn"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="143dp"
+            tools:layout_editor_absoluteY="331dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

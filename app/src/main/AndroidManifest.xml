@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abnv.flamefreezer.crimevigilance">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/crimevigilance"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.Login" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.Register" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoggedInActivity"
+            android:label="@string/title_activity_logged_in"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.LoggedIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddMissingPersonActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".AddCrimeActivity" />
+        <activity android:name=".AboutUs_Activity" />
+        <activity android:name=".CrimesActivity" />
+        <activity android:name=".MissingPersonsActivity"></activity>
+    </application>
+
+</manifest>

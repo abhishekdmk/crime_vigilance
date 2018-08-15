@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="android:popupMenuStyle">@style/CustomOverflow</item>
+        <item name="android:itemTextAppearance">@style/MyPopupStyle</item>
+    </style>
+
+    <style name="CustomOverflow" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@color/colorPrimaryDark</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="MyTabStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFA09D7A</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+    <style name="MyNavStyle" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+    <style name="MyPopupStyle" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+
+</resources>

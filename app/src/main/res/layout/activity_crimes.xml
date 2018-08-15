@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abnv.flamefreezer.crimevigilance.CrimesActivity">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:id="@+id/crimes_layout"
+        android:orientation="horizontal"><include
+        android:id="@+id/crimes_bar"
+        layout="@layout/crimes_bar" /></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/crimes_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:onClick="onClick"
+        android:text="@string/Search"
+        android:textColor="#FFA8A789"
+        android:textSize="20dp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Enter Zipcode"
+        android:inputType="number"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="62dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/editText5"
+        android:layout_toEndOf="@+id/editText5"
+        android:visibility="gone"
+        app:srcCompat="@drawable/searchicon"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+</RelativeLayout>
